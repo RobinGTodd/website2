@@ -1,0 +1,233 @@
+
+
+/* SCSS HEX */
+$background: #f4f4f4;
+$background2: white;
+$background3: white;
+$borders: #c7c7c7;
+
+$accent-bright: #023B59;
+
+$text-headers: $accent-bright;
+$text-headers2: $accent-bright;
+$text: $accent-bright;
+$text2: $accent-bright;
+
+$text-content: black;
+
+
+
+// $background: #f4f4f4;
+// $borders: #c7c7c7;
+// $primary: #DADED4;
+// $accent-light: #A3BCB6;
+// $accent-bright: #39603D;
+// $accent-dark: #3C403D;
+
+// $background: #e1b382;
+// $background2: #c89666;
+// $background3: #2d545e;
+// $text: white;
+// $borders: #c89666;
+
+// $background: #0a251d;
+// $background2: white;
+// $background3: white;
+// $text: white;
+// $text2: black;
+// $borders: #09404e;
+
+
+
+// $primary: #DADED4;
+// $accent-light: #A3BCB6;
+// $accent-bright: #39603D;
+// $accent-dark: #3C403D;
+
+
+.App {
+  font-family: 'Raleway';
+  margin: 0px;
+  .page-template {
+    background-color: $background;
+    padding-top: 70px;
+  }
+}
+
+.navbar {
+  background-color: $background3;
+  padding-left: 10px;
+  border: 1px solid $borders;
+}
+
+.content-text {
+  background-color: $background2;
+  color: $text2;
+  border-right: 1px solid $borders;
+  border-left: 1px solid $borders;
+  border-bottom: 1px solid $borders;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.content-header {
+  border-top: 1px solid $borders;
+  border-right: 1px solid $borders;
+  border-left: 1px solid $borders;
+  border-bottom: 1px solid $borders;
+  background-color: $background3;
+  padding: 10px;
+}
+
+.content-title {
+  text-transform: uppercase;
+  padding: 20px;
+  color: $text-headers2;
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding-bottom: 10px;
+    letter-spacing: .5rem;
+  }
+  h2 {
+    font-size: 1rem;
+    font-weight:200;
+  }
+  @media(max-width:767px) {
+    display: block;
+    text-align: center;
+  }
+
+}
+
+.content-info {
+  text-align: right;
+  font-size: .8rem;
+  font-weight: light;
+  justify-content: center;
+  padding: 20px;
+  color: $text2;
+  @media(max-width:767px) {
+    display: block;
+    text-align: center;
+    padding: 0px;
+  }
+}
+
+.content-image {
+  background-color: $background2;
+  padding: 10px;
+  border-right: 1px solid $borders;
+  border-left: 1px solid $borders;
+  img{
+    max-width: 100%;
+  }
+}
+
+.my-name {
+    @media(max-width:767px) {
+      text-align: center;
+      position: relative;
+    }
+  color: $text;
+  width: inherit;
+  position: fixed;
+  display: block;
+  padding-left: 10px;
+
+    h1 {
+
+      font-weight: 100;
+      text-transform: uppercase;
+      letter-spacing: -.25rem;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+    }
+    h2 {
+
+      font-size: 1rem;
+      padding-bottom: 40px;
+    }
+}
+
+footer {
+  text-align: center;
+}
+
+
+  .home {
+    color: $text-headers;
+    h1 {
+      font-size: 5rem;
+      font-weight: 600;
+      letter-spacing: -.2rem;
+      padding-top: 100px;
+      padding-bottom: 20px;
+      @media(max-width: 767px){
+        padding-top: 50px;
+      }
+    }
+    h2 {
+      font-size: 1rem;
+      padding-bottom: 40px;
+    }
+    img {
+      width: 150px;
+      display: inline;
+      padding: 15px;
+      // float: right;
+      margin: 5px;
+      @media(max-width: 767px) {
+        width: 35%;
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+      }
+    }
+    p {
+      font-size: 1.5rem;
+      color: $text-content;
+      // text-align: justify;
+    }
+    .left {
+      background-color: $accent-bright;
+
+      // margin: 100px 0px 100px 0px;
+
+    }
+    .right {
+      margin: 100px 0px 100px 0px;
+    }
+}
+
+#fill-view {
+  // height: 70vh;
+  // background: $background;
+  // padding-top: 70px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.circular-square { 
+  border-top-left-radius: 50% 50%; 
+  border-top-right-radius: 50% 50%; 
+  border-bottom-right-radius: 50% 50%; 
+  border-bottom-left-radius: 50% 50%; 
+}
+
+.hexagon {
+  clip-path: polygon(50% 0, 100% 15%, 100% 85%, 50% 100%, 0 85%, 0 15%);
+  background: url("../../images/airview.jpg");
+  background-size: cover;
+  // height: 800px;
+  // width: 200px;
+  margin: 10px;
+  // position: scroll;
+  // padding-top: 50px;
+  // margin-top: 50px;
+  display: block;
+  justify-content: center;
+}
