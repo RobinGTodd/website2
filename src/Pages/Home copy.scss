@@ -1,0 +1,124 @@
+$background: #f4f4f4;
+$background2: white;
+$background3: white;
+$borders: #c7c7c7;
+
+// $accent-bright: #014742
+$accent-bright: #12343b;
+// $accent-light: #b0cea5;
+$accent-light: white;
+
+$text-headers: $accent-bright;
+$text-headers2: $accent-bright;
+$text: $accent-bright;
+$text2: $accent-bright;
+
+$text-content: black;
+
+
+
+.home {
+    background-color: $background;
+    color: $text-headers;
+    .navbar {
+      background: $accent-bright;
+      border: none;
+      // .nav-link{color: white;}
+    }
+    .hero {
+      color: $accent-light;
+      padding-top:100px;
+      border: 2px solid $accent-bright;
+      h1 {
+        font-size: 5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: -.25rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      h2 {
+        padding-top: 30px;
+        font-size: 2rem;
+      }
+      h3 {
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+
+
+h1 {
+      font-size: 5rem;
+      font-weight: 600;
+      letter-spacing: -.2rem;
+      padding-bottom: 20px;
+      @media(max-width: 767px){
+        padding-top: 50px;
+      }
+    }
+    h2 {
+      padding-top: 20px;
+      font-size: 1rem;
+    }
+    p {
+      font-size: 1rem;
+      color: $text-content;
+    }
+    .right-justify {
+      text-align: right;
+    }
+    .light-text {
+      p {
+        color: $accent-light;
+      }
+
+    }
+}
+
+#fill-view {
+  height: 70vh;
+  background: $accent-bright;
+  // padding-top: 70px;
+  // padding: 0px;
+  // margin: 0px;
+  
+}
+
+.circular-square { 
+  border-top-left-radius: 50% 50%; 
+  border-top-right-radius: 50% 50%; 
+  border-bottom-right-radius: 50% 50%; 
+  border-bottom-left-radius: 50% 50%; 
+}
+
+
+.double-color {
+  // border-top: 2px solid $accent-bright;
+  min-height: 500px;
+  background-image: linear-gradient(to bottom, $accent-bright 40%, $background 40%);
+  // border: 1px solid yellow;
+  color: black;
+  h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -.25rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  h2 {
+    padding-top: 30px;
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  p {
+    border: 1px solid $accent-bright;
+    // border: none;
+  }
+}

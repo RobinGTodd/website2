@@ -12,7 +12,7 @@ return (
       <embed
       src={resume}
       width="100%"
-      height="500px"
+      height="800px"
       type="application/pdf"/>
       </div>
 

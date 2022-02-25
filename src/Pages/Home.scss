@@ -1,0 +1,93 @@
+/* SCSS HEX */
+$background: #f4f4f4;
+$background2: white;
+$background3: white;
+$borders: #c7c7c7;
+
+// $accent-bright: #014742
+$accent-bright: #12343b;
+$accent-light: #D3F6DB;
+$accent-light: #BABFD1;
+$accent-light: #E8E9ED;
+
+$background2: $background;
+$background: $accent-light;
+
+$accent-light: white;
+
+$text-headers: $accent-bright;
+$text-headers2: $accent-bright;
+$text: $accent-bright;
+$text2: $accent-bright;
+
+$text-content: black;
+
+
+
+.home {
+    background-color: $background;
+    // color: $text-headers;
+    padding-top: 70px;
+
+      .row {
+        //   text-align: center;
+        //   justify-content: center;
+          display: flex;
+          padding: 20px 0px 20px 0px;;
+          min-height: 60vh;
+        //   border: 1px solid black;
+        margin: 5px;
+        h1 {
+            font-size: 5rem;
+            font-weight: 100;
+            text-transform: uppercase;
+            letter-spacing: -.25rem;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            @media(max-width:767px){
+                text-align: center;
+                // margin-right:0px;
+            }
+            width: 300px;
+          }
+          h2 {
+            padding-top: 30px;
+            font-size: 2rem;
+          }
+          h3 {
+            font-size: 1.2rem;
+            font-weight: 300;
+            text-transform: uppercase;
+          }
+          .section1 {
+            background-color: white;
+            padding: 10px;
+            border: 1px solid $borders;
+            justify-content: center;
+            h2 {
+              padding-bottom: 80px;
+              padding-top: 80px;
+              }
+        }
+  
+        .test {
+            border: 1px solid $accent-bright;
+            background-color: $accent-bright;
+        }
+        .headshot {
+            width: 20%;
+            border-top-left-radius: 50% 50%; 
+            border-top-right-radius: 50% 50%; 
+            border-bottom-right-radius: 50% 50%; 
+            border-bottom-left-radius: 50% 50%; 
+        }
+        img {
+            float: right;
+            width: 50%;
+            padding: 0px 10px;
+        }
+      }
+
+}
+
+
