@@ -1,11 +1,8 @@
 import React from 'react';
 import headshot from '../images/headshot.jpg';
-import pic04 from '../images/pic04.jpg';
-import airview from '../images/airview.jpg';
 
 import Navigation from '../Components/Navbar/Navbar';
 // import About from '../Pages/About';
-import resume from '../images/Resume_20220105.pdf';
 import './Home.scss';
 
 import {useNavigate } from "react-router-dom";
@@ -63,7 +60,7 @@ const Home = () => {
             <h2>
               My background
             </h2>
-            <img src={headshot} className='headshot' />
+            <img src={headshot} className='headshot' alt='headshot of Robin'/>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>

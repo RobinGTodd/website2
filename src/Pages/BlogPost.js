@@ -15,7 +15,7 @@ return (
     </div>
 
     <div className="row content-image">
-      <img src={image}/>
+      <img src={image} alt=''/>
     </div>
 
     <div className="row content-text">
